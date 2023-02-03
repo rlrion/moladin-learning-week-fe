@@ -1,0 +1,11 @@
+.main {
+  background-color: rgb(55, 53, 53);
+  color: #ffffff;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 30px;
+}
+h1 {
+  margin-top: 0;
+}

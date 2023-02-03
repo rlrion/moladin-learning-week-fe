@@ -1,0 +1,14 @@
+.form-todo form {
+  display: flex;
+}
+.input-group {
+  flex: 1;
+  padding-right: 20px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+}
+input {
+  width: 100%;
+}
