@@ -82,10 +82,7 @@ const Main = () => {
     }
   };
 
-  const onSubmit = (
-    event: any,
-    data: { title: string; author: string }
-  ) => {
+  const onSubmit = (event: any, data: { title: string; author: string }) => {
     event.preventDefault();
     if (data.title !== "" && data.author !== "") {
       const payload = {
@@ -103,6 +100,10 @@ const Main = () => {
     window.location.href = "http://localhost:3000/";
   };
 
+  const redirectUpdate = (id: number) => {
+    window.location.href = "http://localhost:3000/update/songs/" + id;
+  };
+
   return (
     <div className="main">
       <div className="header">
@@ -115,10 +116,12 @@ const Main = () => {
       </div>
 
       <FormSongs
-        onSubmit={(
-          event: any,
-          data: { title: string; author: string }
-        ) => onSubmit(event, data)}
+        onSubmit={(event: any, data: { title: string; author: string }) =>
+          onSubmit(event, data)
+        }
+        action="Add Song"
+        title=""
+        author=""
       />
 
       <br />
@@ -131,6 +134,7 @@ const Main = () => {
               <ListSongs
                 songs={list}
                 key={list.id}
+                onEdit={() => redirectUpdate(list.id)}
                 onDelete={() => onDelete(list.id)}
               />
             ))}

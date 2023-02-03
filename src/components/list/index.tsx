@@ -8,6 +8,7 @@ type PropsAlbums = {
     year: number;
   };
   onClick: Function;
+  onEdit: Function;
   onDelete: Function;
 };
 
@@ -18,6 +19,7 @@ type PropsSongs = {
     title: string;
     author: string;
   };
+  onEdit: Function;
   onDelete: Function;
 };
 
@@ -29,6 +31,14 @@ export const ListAlbums = (props: PropsAlbums) => {
         <p>Year : {props.albums.year}</p>
       </div>
       <div className="list-actions">
+        <button
+          onClick={() => props.onEdit()}
+          type="button"
+          className="btn-edit"
+        >
+          Edit
+        </button>
+
         <button
           onClick={() => props.onDelete()}
           type="button"
@@ -49,6 +59,14 @@ export const ListSongs = (props: PropsSongs) => {
         <p>Author : {props.songs.author}</p>
       </div>
       <div className="list-actions">
+      <button
+          onClick={() => props.onEdit()}
+          type="button"
+          className="btn-edit"
+        >
+          Edit
+        </button>
+
         <button
           onClick={() => props.onDelete()}
           type="button"

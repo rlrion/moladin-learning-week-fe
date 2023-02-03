@@ -11,8 +11,8 @@
       "year": 2023
     },
     {
-      "name": "xxx",
-      "year": "2000",
+      "name": "xyz",
+      "year": "1999",
       "id": 3
     }
   ],
@@ -30,10 +30,10 @@
       "author": "One Ok Rock"
     },
     {
-      "id": 3,
+      "title": "JAP",
+      "author": "Duta",
       "album_id": 2,
-      "title": "Dan",
-      "author": "Duta"
+      "id": 3
     },
     {
       "id": 4,
@@ -42,28 +42,10 @@
       "author": "Duta"
     },
     {
-      "albumId": "3",
-      "title": "xxx v1",
+      "title": "ya sudah lah ya",
       "author": "xxx",
-      "id": 5
-    },
-    {
-      "albumId": "3",
-      "title": "xxx 1",
-      "author": "xxx",
-      "id": 6
-    },
-    {
-      "albumId": 3,
-      "title": "xxx v1",
-      "author": "xxx",
-      "id": 7
-    },
-    {
       "album_id": 3,
-      "title": "xxx v1",
-      "author": "xxx",
-      "id": 8
+      "id": 5
     }
   ]
 }
